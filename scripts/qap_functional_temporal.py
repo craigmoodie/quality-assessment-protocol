@@ -378,6 +378,7 @@ def run(subject_list, config, cloudify=False):
     if config['write_report']:
         import qap.viz.reports as qvr
         from nipype import logging
+	import os.path as op
         logger = logging.getLogger('workflow')
 
         in_csv = op.join(
